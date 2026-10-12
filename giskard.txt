@@ -1,0 +1,14 @@
+Terminal - 1
+cd "D:\Text summ\backend"
+uvicorn main:app --reload 
+
+Terminal - 2
+cd "D:\Text summ\backend"
+py -3.12 -m venv venv-giskard
+venv-giskard\Scripts\activate.bat
+python -m pip install --upgrade pip
+python -m pip install "giskard[scan,litellm]" httpx python-dotenv
+    python -m pip show giskard
+    python -m pip show litellm
+`Create run_giskard_scan.py`
+python run_giskard_scan.py
